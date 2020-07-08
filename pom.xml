@@ -12,6 +12,7 @@
         <module>tests-testjunit</module>
         <module>tests-testng</module>
         <module>model</module>
+
     </modules>
 
 

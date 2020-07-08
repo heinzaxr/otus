@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,7 +27,14 @@ public class SampleTest {
         public void openPage() {
             driver.get("https://otus.ru/");
             logger.info("Открыта страница OTUS.RU");
+            driver.getTitle();
+            String j = driver.getTitle();
+            Assert.assertEquals("Онлайн‑курсы для профессионалов, дистанционное обучение современным профессиям",j);
+            Assert.assertEquals("Онлайн‑курсы для профессионалов, дистанционное обучение современным профессиям",driver.getTitle());
+            logger.info("Титул загрузился");
         }
+
+
 
         @After
         public void setDown() {
