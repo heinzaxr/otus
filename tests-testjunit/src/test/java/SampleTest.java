@@ -8,7 +8,12 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
+/**
+ * Тест-кейс открытия главной страницы
+ * Открывает в браузере Chrome страницу https://otus.ru/
+ * Проверяет title страницы
+ * Логирует шаги теста с помощью log4j
+ */
 
 public class SampleTest {
 
