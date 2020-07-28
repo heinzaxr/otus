@@ -15,6 +15,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
  * Тест-кейс скрытого объекта, появляющегося при нажатии на button
  * Метод testBootstrap совершает клик по кнопке, ожидает 1 секунду, совершает второй клик, сравнивает alertText
  * Метод GetAlertText получает в скрытом боксе уникальный текст
+ * Все действия логгируются в log4j
  */
 
 public class OtusLesson6 {
