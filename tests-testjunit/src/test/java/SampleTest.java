@@ -26,12 +26,17 @@ public class SampleTest {
         @Test
         public void openPage() {
             driver.get("https://otus.ru/");
-            logger.info("Открыта страница OTUS.RU");
+            logger.info("Открыта страница OTUS");
             driver.getTitle();
-            String j = driver.getTitle();
-            Assert.assertEquals("Онлайн‑курсы для профессионалов, дистанционное обучение современным профессиям",j);
             Assert.assertEquals("Онлайн‑курсы для профессионалов, дистанционное обучение современным профессиям",driver.getTitle());
             logger.info("Титул загрузился");
+            if (driver != null) {
+                driver.quit();
+            }
+
+            driver = new ChromeDriver();
+            driver.get("https://otus.ru/");
+            logger.info("Снова открыта страница OTUS.RU");
         }
 
 
