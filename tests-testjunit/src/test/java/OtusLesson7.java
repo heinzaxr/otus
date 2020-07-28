@@ -9,6 +9,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+/**
+ * Тест-кейс работы с алертами
+ * Драйвер открываает страницу https://dwweb.ru/page/js/002_alert_javascript.html
+ * Ожидает в течении 5 секунд появление первого алерта
+ * Принимает алерт.
+ * Все действия логгируются в log4j
+ */
+
 public class OtusLesson7 {
     protected static WebDriver driver;
     private Logger logger = LogManager.getLogger(SampleTest.class);
