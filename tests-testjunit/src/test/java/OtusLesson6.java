@@ -11,6 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
+/**
+ * Тест-кейс скрытого объекта, появляющегося при нажатии на button
+ * Метод testBootstrap совершает клик по кнопке, ожидает 1 секунду, совершает второй клик, сравнивает alertText
+ * Метод GetAlertText получает в скрытом боксе уникальный текст
+ */
 
 public class OtusLesson6 {
 
